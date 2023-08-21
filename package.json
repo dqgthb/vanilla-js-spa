@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "start": "tsc -w && tscp -w",
+    "build": "tsc && tscp",
+    "nodemon": "nodemon --watch dist/ dist/server.js"
+  },
+  "main": "dist/server.js",
   "type": "module",
   "dependencies": {
     "@types/node": "^20.5.1",
@@ -6,7 +12,9 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "nodemon": "^3.0.1",
     "prettier": "^3.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "typescript-cp": "^0.1.9"
   }
 }
