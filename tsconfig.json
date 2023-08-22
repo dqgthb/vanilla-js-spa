@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "ES2016",
     "module": "ESNext",
     "moduleResolution": "nodenext",
-    "rootDir": "./src",
+    "rootDir": "./src/",
     "outDir": "./dist/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
+  },
+  "ts-node": {
+    "esm": true
   }
 }
